@@ -1,0 +1,52 @@
+body {
+	font-size: 22px;
+}
+
+.title {
+	margin: 0 auto;
+}
+
+.title h1 {
+	margin-bottom: 0;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.result {
+ 	display: grid;
+ 	width: auto;
+ 	max-width: 270px;
+ 	grid-template-columns: 4fr;
+ 	grid-template-rows: 15px;
+ 	grid-gap: 4px;
+ 	margin: 0 auto;
+ 	margin-top: 10px;
+}
+
+.result span {
+	font-size: 48px;
+}
+
+.calc {
+ 	display: grid;
+ 	width: auto;
+ 	max-width: 270px;
+ 	grid-template-columns: 1fr 1fr 1fr 1fr;
+ 	grid-template-rows: 30px 30px 30px 30px 30px;
+ 	grid-gap: 4px;
+ 	margin: 0 auto;
+}
+
+.result span#desc_calc {
+	font-size: 20px;
+}
+
+.calc button {
+	font-size: 16px;
+}
