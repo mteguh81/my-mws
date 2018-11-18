@@ -30,7 +30,7 @@ gmb.appendChild(img);
 rev.appendChild(par);
 
 var base_url = window.location.origin;
-const URL = base_url + "/public/project3/peta.json";
+const URL = base_url + "/project3/peta.json";
 
 fetch(URL).then(function(response){
 	if (response.status !== 200) { //HTTP Status
