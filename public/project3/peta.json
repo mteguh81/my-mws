@@ -1,0 +1,22 @@
+{
+	"places": [
+		{
+			"lokasi": [-6.1997187,106.8362613],
+			"sponsor" : "Kantor 7Langit",
+			"gambar":"images/logo-7langit.jpg",
+			"review": "Disini adalah perusahaan tempat saya bekerja."
+		},
+		{
+			"lokasi": [-6.1984689,106.8348926],
+			"sponsor" : "Starbucks Cik Ditiro",
+			"gambar":"images/starbucks-coffee-menteng.jpg",
+			"review": "Kalo mau ngopi ya di Starbucks, tinggal jalan kaki dari kantor."
+		},
+		{
+			"lokasi": [-6.1952911,106.8378488],
+			"sponsor" : "Anomali Coffee",
+			"gambar":"images/anomali-coffee-menteng.jpeg",
+			"review": "Selain Starbucks, ada Anomali yang menyediakan cita rasa kopi yang berbeda."
+		}
+	]
+}

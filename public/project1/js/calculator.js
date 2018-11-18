@@ -195,6 +195,9 @@ var assignOperator = function() {
     var operator = document.getElementById("operator").value;
     var desc_calc = document.getElementById("desc_calc").innerHTML;
     var first_number = document.getElementById("first_number").value;
+    var calc_value_second = document.getElementById("calc_value").innerHTML;
+
+    console.log(desc_calc);
 
     if (operator) {
         calculateNumber();
@@ -215,7 +218,7 @@ var assignOperator = function() {
     if (desc_calc == "") {
         document.getElementById("desc_calc").innerHTML = calc_value + " " + desc_opr;
     } else {
-        document.getElementById("desc_calc").innerHTML = desc_calc + " " + first_number + " " + desc_opr;
+        document.getElementById("desc_calc").innerHTML = desc_calc + " " + calc_value_second + " " + desc_opr;
     }
 }
 
@@ -239,7 +242,7 @@ var calculateNumber = function() {
     }
 
     document.getElementById("calc_value").innerHTML = total;
-    document.getElementById("desc_calc").innerHTML = "";
+    // document.getElementById("desc_calc").innerHTML = "";
     document.getElementById("first_number").value = "";
     document.getElementById("operator").value = "";
 }
