@@ -52,3 +52,4 @@ for (var p of places) {
 	var marker= L.marker(p.lokasi).addTo(mymap).bindPopup("<h2>" + p.sponsor + "</h2>");
 	marker.on('click', showLocation);
 }
+ 
