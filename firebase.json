@@ -3,11 +3,11 @@
     "public": "public",
     "headers": [
       {
-        "source": "/**",
+        "source": "**/*.html",
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "no-cache, no-store, must-revalidate"
+            "value": "max-age=0, no-cache"
           }
         ]
       }
