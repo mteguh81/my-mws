@@ -1,4 +1,4 @@
-const staticCacheName = 'restaurant-static-054';
+const staticCacheName = 'my-mws-static-001';
 
 // list of assets to cache on install
 // cache each restaurant detail page as well
@@ -9,21 +9,9 @@ self.addEventListener('install', event => {
             return cache.addAll([
                 '/index.html',
                 // '/restaurant.html',
-                '/css/styles.css',
-                '/js/register_sw.js',
-                '/js/restaurant_info.js',
-                // '/data/restaurants.json',
-                '/restaurant.html?id=1',
-                '/restaurant.html?id=2',
-                '/restaurant.html?id=3',
-                '/restaurant.html?id=4',
-                '/restaurant.html?id=5',
-                '/restaurant.html?id=6',
-                '/restaurant.html?id=7',
-                '/restaurant.html?id=8',
-                '/restaurant.html?id=9',
-                '/restaurant.html?id=10',
-                '/img/fixed/offline_img1.png'
+                '/css/main.css',
+                '/css/responsive.css',
+                '/js/register_sw.js'
             ]).catch(error => {
                 console.log('Caches open failed: ' + error);
             });
@@ -59,11 +47,11 @@ self.addEventListener('fetch', event => {
 // delete old/unused static caches
 self.addEventListener('activate', event => {
     event.waitUntil(
-        // caches.delete('-restaurant-static-001')
+        // caches.delete('-my-mws-static-001')
         caches.keys().then(cacheNames => {
             return Promise.all(
                 cacheNames.filter(cacheName => {
-                    return cacheName.startsWith('restaurant-static-') && cacheName !== staticCacheName;
+                    return cacheName.startsWith('my-mws-static-') && cacheName !== staticCacheName;
                 }).map(cacheName => {
                     return caches.delete(cacheName);
                 })

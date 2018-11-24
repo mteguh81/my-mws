@@ -2,6 +2,37 @@
 	.imgme {
  		max-width: 100%;
  	}
+
+ 	.sidebar {
+ 		display: none;
+ 	}
+
+ 	.menu {
+ 		display: inline-flex;
+ 		margin-left: 0;
+ 	}
+
+ 	.nodisplay {
+		display: block;
+	}
+
+	.menu_title {
+		font-size: 16px;
+    	margin-left: 10px;
+	}
+
+	.konten {
+		grid-column: 1/5;
+	}
+
+	.social a {
+		margin-left: 0;
+		margin-right: 15px;
+	}
+
+	.social a:last-child {
+		margin-right: 0;
+	}
 }
 
 @media (max-width: 991px) {
