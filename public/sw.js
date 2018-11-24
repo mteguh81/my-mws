@@ -1,8 +1,9 @@
 const staticCacheName = 'my-mws-static-001';
 
 // list of assets to cache on install
-// cache each restaurant detail page as well
+// cache each my-mws detail page as well
 self.addEventListener('install', event => {
+    self.skipWaiting();
     event.waitUntil(
         caches.open(staticCacheName)
         .then(cache => {
@@ -10,7 +11,9 @@ self.addEventListener('install', event => {
                 '/index.html',
                 '/css/main.css',
                 '/css/responsive.css',
-                '/js/register_sw.js'
+                '/js/register_sw.js',
+                '/images/fixed/offline_img1.png',
+                '/images/mws_logo.jpeg'
             ]).catch(error => {
                 console.log('Caches open failed: ' + error);
             });
