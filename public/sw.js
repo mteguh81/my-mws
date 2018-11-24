@@ -8,7 +8,6 @@ self.addEventListener('install', event => {
         .then(cache => {
             return cache.addAll([
                 '/index.html',
-                // '/restaurant.html',
                 '/css/main.css',
                 '/css/responsive.css',
                 '/js/register_sw.js'

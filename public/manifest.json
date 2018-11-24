@@ -1,11 +1,11 @@
 {
-  "name": "Udacity Restaurant Reviews MWS",
-  "short_name": "Restaurants",
-  "theme_color": "#252831",
+  "name": "my-mws",
+  "short_name": "my-mws",
+  "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "browser",
-  "Scope": "/index.html",
-  "start_url": "/index.html",
+  "Scope": "/public",
+  "start_url": "/public",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
