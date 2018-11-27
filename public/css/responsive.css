@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.imgme {
  		max-width: 100%;
  	}
@@ -12,13 +12,12 @@
  		margin-left: 0;
  	}
 
- 	.nodisplay {
+ 	.icon_menu {
 		display: block;
 	}
 
 	.menu_title {
 		font-size: 16px;
-    	margin-left: 10px;
 	}
 
 	.konten {
@@ -35,7 +34,7 @@
 	}
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
 	.imgme {
  		max-width: 90%;
  	}

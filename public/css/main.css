@@ -69,15 +69,9 @@ hr {
 }
 .imgme {
 	width: auto;
-	max-width: 60%;
+	max-width: 80%;
 	margin: 0 auto;
 	display: block;
-	border-top-left-radius: 100px;
-    -webkit-border-top-left-radius: 100px;
-    -moz-border-top-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    -webkit-border-bottom-right-radius: 100px;
-    -moz-border-bottom-right-radius: 100px;
 }
 .social {
 	display: block;
@@ -213,4 +207,10 @@ hr {
 
 .nodisplay {
 	display: none;
+}
+
+.icon_menu {
+    position: absolute;
+    float: right;
+    right: 15px;
 }
