@@ -32,6 +32,14 @@ hr {
     padding: 10px;
     margin-left: 250px;
 }
+/*body.slideout .menu {
+    -webkit-transform: translate3d(80%,0,0);
+    transform: translate3d(80%,0,0);
+    transition: -webkit-transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease,-webkit-transform .4s ease;
+    z-index: 1;
+}*/
 .sidebar {
 	grid-row-start: 1;
 	grid-row-end: 2;
@@ -211,6 +219,9 @@ hr {
 
 .icon_menu {
     position: absolute;
-    float: right;
     right: 15px;
+}
+
+body.slideout .icon_menu:before {
+    content: "\f00d";
 }

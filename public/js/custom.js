@@ -24,9 +24,12 @@ text_menu.innerHTML = "Mobile Web Specialist - Learning";
 
 var icon_menu = document.createElement("i");
 icon_menu.className = "fas fa-bars nodisplay icon_menu";
+icon_menu.id = "icon_menu";
 
 wrapper_menu.appendChild(text_menu);
 wrapper_menu.appendChild(icon_menu);
+
+// wrapper_parent = document.createElement("div");
 
 var wrapper_konten = document.createElement("div");
 wrapper_konten.className = "konten";
@@ -200,3 +203,18 @@ wrapper_container.appendChild(wrapper_konten_second);
 wrapper_container.appendChild(wrapper_footer);
 
 document.body.insertBefore(wrapper_container, document.body.firstChild);
+
+function hasClass(ele,cls) {
+     return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+}
+
+var slideMenu = function() {
+	if(hasClass(document.body, "slideout")){
+    	document.body.classList.remove("slideout");
+    } else {
+    	document.body.classList.add("slideout");
+    }
+}
+
+document.getElementById("icon_menu").addEventListener('click', slideMenu);
+
