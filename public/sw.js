@@ -1,4 +1,4 @@
-const staticCacheName = 'my-mws-static-002';
+const staticCacheName = 'my-mws-static-003';
 
 // list of assets to cache on install
 // cache each my-mws detail page as well
@@ -48,12 +48,12 @@ self.addEventListener('fetch', event => {
                 });
             });
         }).catch(error => {
-            // if (event.request.url.includes('.jpg')) {
-            //     return caches.match('/images/fixed/offline_img1.png');
-            // }
-            if (event.request.url.match(/\.(jpe?g|png|gif|svg)$/)) {
-              return new Response('<svg role="img" aria-labelledby="offline-title" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"><title id="offline-title">Offline</title><path fill="rgba(145,145,145,0.5)" d="M0 0h400v225H0z" /><text fill="rgba(0,0,0,0.33)" font-family="Helvetica Neue,Arial,sans-serif" font-size="27" text-anchor="middle" x="200" y="113" dominant-baseline="central">offline</text></svg>', {headers: {'Content-Type': 'image/svg+xml'}});
+            if (event.request.url.includes('.jpg')) {
+                return caches.match('/images/fixed/offline_img1.png');
             }
+            // if (event.request.url.match(/\.(jpe?g|png|gif|svg)$/)) {
+            //   return new Response('<svg role="img" aria-labelledby="offline-title" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"><title id="offline-title">Offline</title><path fill="rgba(145,145,145,0.5)" d="M0 0h400v225H0z" /><text fill="rgba(0,0,0,0.33)" font-family="Helvetica Neue,Arial,sans-serif" font-size="27" text-anchor="middle" x="200" y="113" dominant-baseline="central">offline</text></svg>', {headers: {'Content-Type': 'image/svg+xml'}});
+            // }
             return new Response('Not connected to the internet', {
                 status: 404,
                 statusText: "Not connected to the internet"
