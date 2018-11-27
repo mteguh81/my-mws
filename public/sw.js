@@ -9,12 +9,24 @@ self.addEventListener('install', event => {
         .then(cache => {
             return cache.addAll([
                 '/index.html',
+                '/project1/calculator.html',
+                '/project2/peta.html',
+                '/project3/fetch-json.html',
                 '/css/main.css',
                 '/css/responsive.css',
+                '/project1/css/calculator.css',
+                '/project2/css/peta.css',
+                '/project3/css/peta.css',
                 '/js/custom.js',
                 '/js/register_sw.js',
+                '/project1/js/calculator.js',
+                '/project2/js/peta.js',
+                '/project3/js/peta.js',
                 '/images/fixed/offline_img1.png',
-                '/images/mws_logo.jpeg'
+                '/images/mws_logo.jpeg',
+                '/project3/images/anomali-coffee-menteng.jpeg',
+                '/project3/images/logo-7langit.jpg',
+                '/project3/images/starbucks-coffee-menteng.jpg',
             ]).catch(error => {
                 console.log('Caches open failed: ' + error);
             });
