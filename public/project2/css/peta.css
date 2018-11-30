@@ -1,19 +1,20 @@
 html, body, #map {
 	height: 100%;
-	width: 100vw;
 }
 
 body {
 	padding: 0;
 	margin: 0;
+	background-color: #F5F5F5;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .container {
 	display: grid;
-	height: 100%;
-	grid-gap: 4px;
-	grid-template-columns: repeat(8,1fr);
-	grid-template-rows: 60% 40%;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: 60% 40%;
 }
 
 .peta {
@@ -21,11 +22,68 @@ body {
 }
 
 .gambar {
-	background: green;
+	background: none;
 	grid-column: 1/6;
 }
 
 .review {
-	background: yellow;
-	grid-column:6/-1;
+	background: none;
+    grid-column: 6/10;
+    margin-right: 30px;
+}
+
+.menu {
+    background: #fff;
+    box-shadow: 0 0 40px rgba(0,0,0,.2);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    padding: 10px;
+}
+
+.img_logo {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.icon_back {
+	margin-right: 15px;
+}
+
+.menu a:hover, .menu a:focus {
+	color: #3A4655;
+}
+
+img {
+	width: auto;
+	max-width: 80%;
+	margin: 0 auto;
+    display: block;
+}
+
+@media screen and (max-width: 640px) {
+	.gambar {
+	    background: none;
+	    grid-column: 1/10;
+	}
+
+	.review {
+	    background: none;
+	    grid-column: 1/10;
+	    margin-left: 15px !important;
+	    margin: 0 auto;
+	    display: block;
+	    position: relative;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	.container {
+		grid-template-rows: 60% auto;
+	}
+
 }

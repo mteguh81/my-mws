@@ -1,18 +1,37 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<meta name="viewport" content="width=device-width, initialscale=1.0, user-scalable=no" />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initialscale=1">
+		<meta name="description" content="MWS Project - Mochamad Teguh - Favorite Place">
+		<title>GDK - Mobile Web Specialist - Favorite Place</title>
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+		<link rel="shortcut icon" href="../images/mws_logo.jpeg">
+
 		<link rel="stylesheet" type="text/css" href="css/peta.css">
+		<link rel="stylesheet" type="text/css" href="../css/responsive.css">
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
 		<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
 	</head>
 
 	<body>
 		<div class='container'>
+			<div class="menu">
+				<a href="/"><i class="fas fa-arrow-left icon_back" id="icon_menu"></i></a>
+				<img class="img_logo" src="../images/logo-gdk.png">
+			</div>
 			<div class='peta' id='mapid'> </div>
 			<div class='gambar'>
-				Gambar Disini
+				<img src="images/trans-studio-bandung.jpg">
 			</div>
-			<div class='review'>Tulis review disini</div>
+			<div class='review'>
+				<h2>Trans Studio Bandung</h2>
+				<p>Trans Studio Bandung adalah kawasan wisata terpadu di Kota Bandung, Indonesia. Trans Studio dibangun pada areal seluas 4,2 hektare dengan investasi mencapai Rp 2 triliun sehingga menjadikan sebagai kawasan hiburan terluas dan terlengkap di Bandung. <br/><br/>Wahana yang terdapat menawarkan petualangan dan sensasi baru yang tidak kalah menantang seperti pendahulunya yaitu Trans Studio Resort Makassar yang dibuka pada tahun 2009. Trans Studio Bandung dibuka untuk umum pada tanggal 18 Juni 2011. Trans Studio Bandung adalah taman bermain yang paling komplet di kota Bandung.<br/><br/>Sumber: <a href="https://id.wikipedia.org/wiki/Trans_Studio_Bandung" target="_blank">Wikipedia</a></p>
+			</div>
 		</div>
 
 		<script src="../js/register_sw.js"></script>

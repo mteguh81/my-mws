@@ -1,9 +1,12 @@
 body {
 	font-size: 22px;
+	background-color: #F5F5F5;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .title {
 	margin: 0 auto;
+	margin-top: 80px;
 }
 
 .title h1 {
@@ -27,10 +30,14 @@ body {
  	grid-gap: 4px;
  	margin: 0 auto;
  	margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #3A4655;
 }
 
 .result span {
 	font-size: 48px;
+	margin-right: 5px;
 }
 
 .calc {
@@ -38,7 +45,7 @@ body {
  	width: auto;
  	max-width: 270px;
  	grid-template-columns: 1fr 1fr 1fr 1fr;
- 	grid-template-rows: 30px 30px 30px 30px 30px;
+ 	grid-template-rows: 40px 40px 40px 40px 40px;
  	grid-gap: 4px;
  	margin: 0 auto;
 }
@@ -47,6 +54,49 @@ body {
 	font-size: 20px;
 }
 
-.calc button {
+.calc a {
 	font-size: 16px;
+    background-color: #404D5E;
+    color: #fff;
+    border: 1px solid #3F4C5C;
+    padding-top: 7px;
+    text-align: center;
+}
+
+.calc_parent {
+	border: 1px solid #3A4655;
+    width: auto;
+    height: 335px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.calc a:hover {
+	background-color: lightslategrey;
+}
+
+.menu {
+    background: #fff;
+    box-shadow: 0 0 40px rgba(0,0,0,.2);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    padding: 10px;
+}
+
+.img_logo {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.icon_back {
+	margin-right: 15px;
+}
+
+.menu a:hover, .menu a:focus {
+	color: #3A4655;
 }

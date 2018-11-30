@@ -54,33 +54,39 @@ hr {
     width: 100%;
     position: fixed;
 }
+
 .konten {
 	grid-column: 2/5;
 	position: relative;
 	margin-top: 70px;
 }
+
 .footer {
 	grid-column: 1/5;
 	grid-row: 5/5;
 }
+
 .style_name {
 	color: #fff;
 	text-align: center;
 }
-.imgmenu {
-	width: 25px;
-	padding-left: 5px;
-	padding-top: 3px;
-}
+
 .center {
 	text-align: center;
 }
+
 .imgme {
 	width: auto;
 	max-width: 80%;
 	margin: 0 auto;
 	display: block;
 }
+
+.img_logo {
+    width: 30%;
+    vertical-align: middle;
+}
+
 .social {
 	display: block;
 	text-align: center;
@@ -160,6 +166,7 @@ hr {
 
 .material-container.columns4 .material-item-wrapper.material-item-wrapper-style2 .material-item .material-item-details {
     padding: 24px;
+    height: 110px;
 }
 
 .row {
@@ -206,6 +213,8 @@ hr {
     border: 1px solid #000;
     text-decoration: none;
     margin-top: 25px;
+    position: absolute;
+    top: 70px;
 }
 
 .link_det:hover {
@@ -224,4 +233,14 @@ hr {
 
 body.slideout .icon_menu:before {
     content: "\f00d";
+}
+
+.margin-top40 {
+    margin-top: 40px;
+}
+
+.style_desc {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
 }

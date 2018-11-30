@@ -1,4 +1,4 @@
-const staticCacheName = 'my-mws-static-003';
+const staticCacheName = 'my-mws-static-004';
 
 // list of assets to cache on install
 // cache each my-mws detail page as well
@@ -23,6 +23,7 @@ self.addEventListener('install', event => {
                 '/project2/js/peta.js',
                 '/project3/js/peta.js',
                 '/images/fixed/offline_img1.png',
+                '/images/logo-gdk.png',
                 '/images/mws_logo.jpeg',
                 '/project3/images/anomali-coffee-menteng.jpeg',
                 '/project3/images/logo-7langit.jpg',

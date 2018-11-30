@@ -1,37 +1,17 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+	initiateHomeContent(); // Memanggil fungsi untuk mengisi konten homepage
+});
+
+initiateHomeContent = () => {
 	var wrapper_container = document.createElement("div");
 	wrapper_container.className = "container";
 
-	var wrapper_sidebar = document.createElement("div");
-	wrapper_sidebar.className = "sidebar";
+	document.body.insertBefore(wrapper_container, document.body.firstChild);
 
-	var text_sidebar = document.createElement("h2");
-	text_sidebar.className = "style_name";
-	text_sidebar.innerHTML = "Mochamad Teguh";
-
-	var image_sidebar = document.createElement("img");
-	image_sidebar.className = "imgme";
-	image_sidebar.src = "./images/me_small.jpg";
-
-	wrapper_sidebar.appendChild(text_sidebar);
-	wrapper_sidebar.appendChild(image_sidebar);
-
-	var wrapper_menu = document.createElement("div");
-	wrapper_menu.className = "menu";
-
-	var text_menu = document.createElement("span");
-	text_menu.className = "menu_title";
-	text_menu.innerHTML = "Mobile Web Specialist - Learning";
-
-	var icon_menu = document.createElement("i");
-	icon_menu.className = "fas fa-bars nodisplay icon_menu";
-	icon_menu.id = "icon_menu";
-
-	wrapper_menu.appendChild(text_menu);
-	wrapper_menu.appendChild(icon_menu);
-
-	// wrapper_parent = document.createElement("div");
-
+	initiateSidebar(wrapper_container);// Inisiasi konten sidebar
+	initiateHeader(wrapper_container); // Inisiasi konten menu
+	
+	// Inisisasi konten homepage
 	var wrapper_konten = document.createElement("div");
 	wrapper_konten.className = "konten";
 
@@ -153,7 +133,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	wrapper_konten_second.appendChild(wrapper_material_container_second);
 
 	var wrapper_footer = document.createElement("div");
-	wrapper_footer.className = "footer center";
+	wrapper_footer.className = "footer center margin-top40";
 
 	var wrapper_footer_line = document.createElement("hr");
 
@@ -197,13 +177,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	wrapper_footer.appendChild(wrapper_footer_line);
 	wrapper_footer.appendChild(wrapper_social);
 
-	wrapper_container.appendChild(wrapper_sidebar);
-	wrapper_container.appendChild(wrapper_menu);
 	wrapper_container.appendChild(wrapper_konten);
 	wrapper_container.appendChild(wrapper_konten_second);
 	wrapper_container.appendChild(wrapper_footer);
 
-	document.body.insertBefore(wrapper_container, document.body.firstChild);
 
 	function hasClass(ele,cls) {
 		return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
@@ -218,6 +195,45 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	}
 
 	document.getElementById("icon_menu").addEventListener('click', slideMenu);
+}
 
-});
+initiateSidebar = (wrapper_container) => {
+	var wrapper_sidebar = document.createElement("div");
+	wrapper_sidebar.className = "sidebar";
 
+	var text_sidebar = document.createElement("h2");
+	text_sidebar.className = "style_name";
+	text_sidebar.innerHTML = "Mochamad Teguh";
+
+	var image_sidebar = document.createElement("img");
+	image_sidebar.className = "imgme";
+	image_sidebar.src = "./images/me_small.jpg";
+
+	var text_desc_sidebar = document.createElement("p");
+	text_desc_sidebar.className = "style_desc";
+	text_desc_sidebar.innerHTML = "GDK - Mobile Web Specialist Project";
+
+	wrapper_sidebar.appendChild(text_sidebar);
+	wrapper_sidebar.appendChild(image_sidebar);
+	wrapper_sidebar.appendChild(text_desc_sidebar);
+
+	wrapper_container.appendChild(wrapper_sidebar);
+}
+
+initiateHeader = (wrapper_container) => {
+	var wrapper_menu = document.createElement("div");
+	wrapper_menu.className = "menu";
+
+	var image_menu = document.createElement("img");
+	image_menu.className = "img_logo";
+	image_menu.src = "./images/logo-gdk.png";
+
+	var icon_menu = document.createElement("i");
+	icon_menu.className = "fas fa-bars nodisplay icon_menu";
+	icon_menu.id = "icon_menu";
+
+	wrapper_menu.appendChild(image_menu);
+	wrapper_menu.appendChild(icon_menu);
+
+	wrapper_container.appendChild(wrapper_menu);
+}
