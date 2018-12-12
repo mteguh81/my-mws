@@ -1,4 +1,4 @@
-const staticCacheName = 'my-mws-static-004';
+const staticCacheName = 'my-mws-static-005';
 
 // list of assets to cache on install
 // cache each my-mws detail page as well
