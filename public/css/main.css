@@ -215,7 +215,6 @@ hr {
     margin-top: 25px;
     position: absolute;
     top: 70px;
-    z-index: 999;
 }
 
 .link_det:hover {
