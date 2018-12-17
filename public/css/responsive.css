@@ -69,6 +69,10 @@
 	.footer {
 		margin-top: 200px;
 	}
+
+	.material-container.columns4 .material-item-wrapper.material-item-wrapper-style2.style_ftch {
+		grid-template-rows: 200px;
+	}	
 }
 
 @media (min-width: 769px) and (max-width: 991px) {

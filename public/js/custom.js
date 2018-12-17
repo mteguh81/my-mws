@@ -95,7 +95,7 @@ initiateHomeContent = () => {
 	wrapper_material_container_second.className = "material-container columns4";
 
 	var wrapper_material_item_parent_second = document.createElement("div");
-	wrapper_material_item_parent_second.className = "material-item-wrapper material-item-wrapper-style2 row";
+	wrapper_material_item_parent_second.className = "material-item-wrapper material-item-wrapper-style2 row style_ftch";
 	 
 	var wrapper_material_item_container_third = document.createElement("div");
 	wrapper_material_item_container_third.className = "material-item-container ent";
